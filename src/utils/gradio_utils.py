@@ -365,7 +365,7 @@ def launch_main(img_in_real, img_in_synth, src, src_custom, dest, dest_custom, n
         if width > height: scale_factor = 512/width
         else: scale_factor = 512/height
         new_size = (int(width * scale_factor), int(height * scale_factor))
-        img_in_real = img_in_real.resize(new_size, Image.Resampling.LANCZOS)
+        img_in_real = img_in_real.resize(new_size, Image.LANCZOS)
         hash = hashlib.sha256(img_in_real.tobytes()).hexdigest()
         inv_fname = f"tmp/{hash}_ddim_{num_ddim}_inv.pt"
         caption_fname = f"tmp/{hash}_caption.txt"
