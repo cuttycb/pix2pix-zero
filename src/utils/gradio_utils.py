@@ -17,7 +17,7 @@ from edit_directions import construct_direction
 from edit_pipeline import EditingPipeline
 from ddim_inv import DDIMInversion
 from scheduler import DDIMInverseScheduler
-from lavis.models import load_model_and_preprocess
+from LAVIS.lavis.models import load_model_and_preprocess
 from transformers import T5Tokenizer, AutoTokenizer, T5ForConditionalGeneration, BloomForCausalLM
 
 

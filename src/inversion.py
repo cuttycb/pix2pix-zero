@@ -1,4 +1,8 @@
-import os, pdb
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import pdb
 from glob import glob
 import argparse
 import numpy as np
